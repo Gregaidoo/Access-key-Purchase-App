@@ -3,15 +3,14 @@ import axios from "axios";
 
 
 
-
-axios.defaults.headers.common = {'Authorization': `Bearer ${localStorage.getItem('token')}`   }
+axios.defaults.headers.common = {'Authorization': `Bearer ${localStorage.getItem('token')}` ,   'Content-Type': 'application/json'  }
 
 export const CreateUserAction = createAsyncThunk(
   "new/user",
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/users`,payload
+        `https://api-optimum.seedogh.com/api/users`,payload
         
       );
 
@@ -30,7 +29,7 @@ export const loginUserAction = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/users/login `, payload
+        `https://api-optimum.seedogh.com/api/users/login `, payload
         
       );
 
@@ -49,7 +48,7 @@ export const adloginUserAction = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/admin/login `, payload
+        `https://api-optimum.seedogh.com/api/admin/login `, payload
         
       );
 
@@ -67,7 +66,7 @@ export const  passwordsendmail = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/users/mailPasswordreset`,payload
+        `https://api-optimum.seedogh.com/api/users/mailPasswordreset`,payload
         
       );
 
@@ -86,7 +85,7 @@ export const passwordResetAction = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/users/resetPassword`,payload
+        `https://api-optimum.seedogh.com/api/users/resetPassword`,payload
         
       );
 
@@ -105,7 +104,7 @@ export const verifyuser = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/users/verify`,payload
+        `https://api-optimum.seedogh.com/api/users/verify`,payload
         
       );
 
@@ -125,7 +124,7 @@ export const fakeloginUserAction = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000`,
+        `https://api-optimum.seedogh.com`,
         
       );
 

@@ -1,20 +1,13 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-axios.defaults.headers.common = {'Authorization': `Bearer ${localStorage.getItem('token')}`   }
-// const config = {
- 
-//   headers: {
- 
-//     headers: { Authorization : `Bearer ${localStorage.getItem('token')}`,
-//     'Content-Type': 'application/json'
-//   },
-// }};
+axios.defaults.headers.common = {'Authorization': `Bearer ${localStorage.getItem('token')}` ,   'Content-Type': 'application/json'  }
+
 export const fetchkeyAction = createAsyncThunk(
   "keys/list",
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:3000/api/keys` 
+        `https://api-optimum.seedogh.com/api/keys` 
         
       );
 
@@ -33,7 +26,7 @@ export const fetchSinglekey = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:3000/api/keys/${payload}`
+        `https://api-optimum.seedogh.com/api/keys/${payload}`
         
       );
 
@@ -51,7 +44,7 @@ export const fetchsinglePendingkey = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:3000/api/keys/pending/${payload}`
+        `https://api-optimum.seedogh.com/api/keys/pending/${payload}`
         
       );
 
@@ -69,7 +62,7 @@ export const fetchPendingkey = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:3000/api/keys/pending` 
+        `https://api-optimum.seedogh.com/api/keys/pending` 
         
       );
 
@@ -88,7 +81,7 @@ export const fetchinstitutionkey = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:3000/api/keys/all/${payload}` 
+        `https://api-optimum.seedogh.com/api/keys/all/${payload}` 
         
       );
 
@@ -107,7 +100,7 @@ export const createPendingkey = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/keys/pending`,payload 
+        `https://api-optimum.seedogh.com/api/keys/pending`,payload 
         
       );
 
@@ -126,7 +119,7 @@ export const createnewkey = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/keys`,payload 
+        `https://api-optimum.seedogh.com/api/keys`,payload 
         
       );
 
@@ -145,7 +138,7 @@ export const createnewkey1 = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/keys`,payload 
+        `https://api-optimum.seedogh.com/api/keys`,payload 
         
       );
 
@@ -164,7 +157,7 @@ export const revokekey = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.patch(
-        `http://localhost:3000/api/keys/${payload}` 
+        `https://api-optimum.seedogh.com/api/keys/${payload}` 
         
       );
 
@@ -183,7 +176,7 @@ export const deletesinglePendingkey = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/keys/delete/${payload}`
+        `https://api-optimum.seedogh.com/api/keys/delete/${payload}`
         
       );
 
@@ -202,7 +195,7 @@ export const fakeloginUserAction = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3000`
+        `https://api-optimum.seedogh.com`
         
       );
 
