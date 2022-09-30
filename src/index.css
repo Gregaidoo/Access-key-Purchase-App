@@ -1,0 +1,320 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+@layer base {
+    body {
+        @apply font-[Calibri] 
+    }
+    li{
+        @apply px-4;
+        @apply cursor-pointer
+    }
+    .max{
+        @apply max-w-[1000px]
+    }
+    
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    background-color: deepskyblue;
+
+    padding: 25px 50px;
+    color: #fff;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-header{
+
+    background-color: rgba(0, 191, 255, 0.205);
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title{
+    display: flex;
+    justify-content: flex-start;
+}
+.log{
+    display: flex;
+    float: right;
+    margin-right: 50px;
+}
+
+.logout{
+    display: flex;
+    float: right;
+
+}
+.footer{
+    background-color: deepskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10;   
+}
+.pad{
+    margin: 0 50px;
+    background-color: beige;
+    padding: 30px; 
+    height: 75vh;
+}
+footer{
+    position: relative;
+    bottom: 0px;
+   
+}
+.page-title{
+    text-align: center; 
+}
+.center{
+    display: flex;
+   justify-content: center;
+}
+.pad-right{
+  
+    flex: 1;
+    margin: 0 10;
+    border-radius: 10px;
+ padding: 15;
+    align-items: center;
+    justify-content: center;
+    border-top: 8px solid green;
+    border-bottom: 8px solid green;
+}
+.pad-left{
+    
+    padding: 15;
+    flex: 1;
+    margin: 0 10;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    border-top: 8px solid green;
+    border-bottom: 8px solid green;
+}
+.padcontent{
+display: flex;
+margin: 20 auto;
+}
+
+.pad-left1{
+    
+    padding: 15;
+    flex: 2;
+    margin: 0 10;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    border-top: 8px solid green;
+    border-bottom: 8px solid green;
+}
+/* jdsjjfjdnfsjdnfjdnjfndjfnjdf */
+
+.form{
+    max-width: 100%;
+    padding: 10px  ;
+  
+  }
+
+
+  /* #Label{
+    float: left;
+    align-items: left;
+   align-items: center;
+    display: block;
+    justify-content: left;
+    width: 45%;
+    display: flex;
+  } */
+ 
+  #submit{
+    background-color:rgb(11, 7, 255);
+    text-align: center;
+    align-items: center;
+    justify-items:center;
+    justify-content: space-around;
+    display: flex;
+    margin: 20px 0px 0px 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    border-color: #fff;
+    
+  }
+  #Input{
+    /* align-items: left;
+    justify-items: left;
+    float: left;
+    justify-content: left;
+    width: 50%;
+    padding: 5px 0; */
+   
+  }
+
+.gg{
+display: flex;
+}
+
+/* #Input1{
+    align-items: left;
+    justify-items: left;
+    float: left;
+    justify-content: left;
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+  } */
+  .op{
+    margin: 20px auto;
+    max-width: 100%;
+  }
+  .vv{
+    display: flex; padding: 5px 0;
+    
+  }
+  .ll{
+    margin-right: 30px;
+  }
+  .lll{
+    display: flex;
+margin: 10;
+    justify-content: center;
+ 
+  }
+  .submit-btn{
+    background-color:rgb(11, 7, 255);
+    padding: 5 20px;
+    border-radius: 5px;
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .uu{
+padding-top: 40px;
+  }
+.actions-btn{
+margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.actions-btn >button{
+    padding: 8px 10px;
+ 
+}
+.nn{
+    margin-top: 10px;
+    border-top: 2px solid rgb(119, 0, 255);
+    padding-top: 10px;
+}
+.no{
+    padding: 15px 0;
+}
+.tt{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.tt >textarea{
+    width: 100%;
+    padding: 8px;
+}
+.uuu{
+ margin-bottom: 8px;
+}
+/* #Input11{
+    align-items: left;
+    justify-items: left;
+    float: left;
+    justify-content: left;
+    width: 100%;
+    padding: 5px 0;
+
+  } */
+  .np{
+    margin-top: 10px;
+   
+    padding-top: 10px;
+}
+#Input2{
+    align-items: left;
+    justify-items: left;
+    float: left;
+    justify-content: left;
+    width: 50%;
+    padding: 5px 0;
+    border: none;
+   
+  }
+  /* .vv >select{
+    width: 100%;
+  } */
+  .medic{
+    display: flex;
+    padding-top: 5;
+  }
+  .one{
+    flex: 5;
+    padding-top: 1;
+    margin: 2px 3px;
+  }
+  .two{
+    flex: 1;
+    padding-top: 1;
+    margin: 2px 3px;
+  }
+  .medic1{
+    display: flex;
+ 
+  }
+  .three{
+   display: flex;
+    padding-top: 1;
+    margin: 2px 3px;
+  }
+  /* #Label1{
+    float: right;
+    align-items: center;
+    justify-content: right;
+    width: 45%;
+    display: flex;
+    margin-right: 10px;
+  } */
+  .login{
+    border: 1px solid grey;
+padding: 30px;
+ width: 450px;
+ background-color: aqua;
+ border-radius: 5px;
+    
+
+    
+  }
+}
+.toast-message {
+  background: #fc051a !important;
+  color: white !important;
+  font-weight: bold;
+}
+.toast-message1 {
+  background: #007df1f8 !important;
+  color: white !important;
+  font-weight: bold;
+}
