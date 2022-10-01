@@ -119,7 +119,7 @@ export const createnewkey = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `https://api-optimum.seedogh.com/api/keys`,payload 
+        `https://api-optimum.seedogh.com/api/keys/`,payload 
         
       );
 

@@ -10,7 +10,7 @@ export const CreateUserAction = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.post(
-        `https://api-optimum.seedogh.com/api/users`,payload
+        `https://api-optimum.seedogh.com/api/users/`,payload
         
       );
 
