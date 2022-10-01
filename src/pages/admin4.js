@@ -83,7 +83,7 @@ export const Store = () => {
           <div>
             <h2
               onClick={(e) => createkey(data)}
-              className="text-xl mt-3 w-full py-1 px-2 bg-sky-400 hover:bg-sky-500 cursor-pointer rounded-sm text-white"
+              className="text-xl mt-3 w-full py-1 px-2 rounded-[50px]  border-4 bg-sky-400 hover:bg-sky-500 cursor-pointer  text-white"
             >
               Request a New Key
             </h2>

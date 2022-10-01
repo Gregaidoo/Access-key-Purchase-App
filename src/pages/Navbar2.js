@@ -69,7 +69,7 @@ console.log(loginUser)
 
     <h3 className="items-center text-2xl font-bold">OptimumPay Incorporated</h3>
   <div className="flex items-center " >
-  <div className=" flex text-xl mr-20  ">User: {user ? user : info}{" "}</div>
+  <div className=" flex text-xl mr-5  ">User: {user ? user : info}{" "}</div>
     <div onClick={loggout} className="rounded p-2 text-xl bg-blue-600  flex  cursor-pointer hover:bg-blue-700 ">logout</div>
    
     </div>
