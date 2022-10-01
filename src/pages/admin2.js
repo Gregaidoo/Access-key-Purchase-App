@@ -70,7 +70,8 @@ export const Store = () => {
     }
 
     if (deletesingle?.success === 1) {
-      toast("Request Deleted Successfully", { className: "toast-message1" });
+      // toast("Request Deleted Successfully", { className: "toast-message1" });
+      dispatch(fakeloginUserAction())
     }
     if (deletesingle?.success === 0) {
       toast("Failed to Delete Request", { className: "toast-message" });

@@ -280,7 +280,7 @@ const keysSlices = createSlice({
       state.loading = true;
       state.newkey = undefined;
       state.revokes = undefined;
-  
+      state.deletesingle = undefined;
      
     });
 

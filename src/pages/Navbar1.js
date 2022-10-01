@@ -15,7 +15,7 @@ export const Logout = () => {
    
       <>
 
-<div className=" p-3 px-[300px] flex justify-center items-center text-white   bg-blue-400  ">
+<div className=" p-3 px-[200px] flex justify-center items-center text-white   bg-blue-400  ">
 
     <h3 className="items-center text-3xl text-center font-bold">OptimumPay Incorporated</h3>
  

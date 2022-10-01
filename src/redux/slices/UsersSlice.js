@@ -181,7 +181,7 @@ const UsersSlices = createSlice({
       state.loading = true;
       state.loginUser = undefined;
       state.CreateUser = undefined;
-      state.deletesingle = undefined;
+    
      
     });
 

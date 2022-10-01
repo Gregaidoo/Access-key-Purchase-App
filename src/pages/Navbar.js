@@ -55,13 +55,13 @@ export const Logout = () => {
 console.log(adloginUser)
   return (
     <>
-      <div className=" p-3 px-[300px] flex justify-between items-center text-white  bg-blue-400  ">
+      <div className=" p-3 px-[200px] flex justify-between items-center text-white  bg-blue-400  ">
         <h3 className="items-center text-2xl font-bold">
           OptimumPay Incorporated
         </h3>
         <div className="flex items-center ">
         
-          <div className=" flex  text-xl mr-5    ">User Email: {" "}{" "}</div>
+          <div className=" flex  text-xl mr-5    ">Email: {" "}{" "}</div>
           <div className=" flex text-xl mr-20  "> {user ? user : info}{" "}{" "}</div>
        
           <div onClick={loggout}  className="rounded-xl px-3 py-2 text-xl bg-blue-600  flex  cursor-pointer hover:bg-blue-700 ">
