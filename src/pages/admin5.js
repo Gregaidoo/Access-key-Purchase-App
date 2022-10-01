@@ -17,9 +17,9 @@ export const Store = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
-      email: user,
-      password: password,
-      institution: institution,
+      "email": user,
+      "password": password,
+      "institution": institution,
     };
     console.log(data);
     dispatch(CreateUserAction(data));
