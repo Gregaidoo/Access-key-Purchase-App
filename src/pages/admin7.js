@@ -13,16 +13,18 @@ export const Store = () => {
   const [message, setmessage] = useState(false);
   const { passwordReset } = users;
   
-  function mailsent(){
-if(passwordReset?.success){
-  setview(true)
-  setmessage("A recovery Link is Sent to your Email")
-}else{
-  setview(true)
-  setmessage("Failed to Send Recovery Mail  ")
-}
-console.log(passwordReset?.success)
-  }
+
+  useEffect(() => {
+    if(passwordReset?.success === 1 ){
+      setview(true)
+      setmessage("A recovery Link is Sent to your Email")  }
+      if(passwordReset?.success === 0 ){
+      setview(true)
+      setmessage("Failed to Send Recovery Mail  ")
+    }
+    console.log(passwordReset?.success)
+  }, [passwordReset?.success]);
+
   const [user,setuser] = useState("")
   
   const handleSubmit = e =>  {
@@ -69,7 +71,7 @@ console.log(passwordReset?.success)
                     
                     </div>
                  
-                    <input onClick={ (e)  => mailsent()  } 
+                    <input 
                       className="text-xl mt-3 w-full py-1 bg-sky-400 hover:bg-sky-500 cursor-pointer rounded-sm text-white"
                       type="submit"
                       id=""
