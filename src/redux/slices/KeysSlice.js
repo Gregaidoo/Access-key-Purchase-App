@@ -7,7 +7,7 @@ export const fetchkeyAction = createAsyncThunk(
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
       const { data } = await axios.get(
-        `https://api-optimum.seedogh.com/api/keys` 
+        `https://api-optimum.seedogh.com/api/keys/all` 
         
       );
 

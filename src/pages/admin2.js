@@ -203,7 +203,7 @@ export const Store = () => {
 
           <div className={
               !view
-                ? "hidden" : "flex-col w-[400px]  py-4    gap-3 rounded-md shadow-lg  border-b-8 border-t-8 border-t-sky-300 border-b-sky-300"}>
+                ? "hidden" : "flex-col w-[300px]  py-4    gap-3 rounded-md shadow-lg  border-b-8 border-t-8 border-t-sky-300 border-b-sky-300"}>
             <div className="flex items-center justify-center ">
               <h4 className="text-xl mb-2 font-semibold  ">
                 Create Key Details

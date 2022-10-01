@@ -49,12 +49,15 @@ useEffect(() => {
   }
 }, [password,confirmPassword ]);
 
+
+
 useEffect(() => {
   // if (passwordReset?.success === undefined) {
   // }
 
   if (passwordReset?.success === 1) {
     toast("Password Reset Successful", { className: "toast-message1" });
+    setTimeout( navigate('/admin6'), 4000) 
   }
   if (passwordReset?.success === 0) {
     toast("LinK Broken or Expired", { className: "toast-message" });
